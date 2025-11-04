@@ -27,7 +27,16 @@ This repository is a starter template for an interactive movie analytics dashboa
 3. Open http://127.0.0.1:8050 in your browser.
 
 ## Next steps / Enhancements
+- Fix Style
+- Fix Worldwide Gross(USD)
+- For Budget, instead of simple integers convert to million or billion something that will be more meaningful
+- Take care of missing values
 - Add more filters (studio, country, MPAA rating)
 - Add more charts (scatter with budget vs gross, profitability metrics)
+- Add profitability (gross - budget) charts and filters
+- Clean and split Production/Financing Companies into rows to analyze studios accurately
+- Add search/autocomplete for movie lookup and modal detail view
+- Add export (CSV/Excel) for filtered table
 - Add authentication if deploying publicly
 - Clean and normalize 'Production/Financing Companies' to explode multiple companies per movie
+- Deploy on Render.com
