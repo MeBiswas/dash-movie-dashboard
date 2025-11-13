@@ -1,8 +1,11 @@
 services:
   - type: web
-    name: movies-dashboard
+    name: dash-movie-dashboard
     env: python
+    plan: free
+    region: singapore   # you can change this: oregon, singapore, etc.
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:server
-    plan: free
-    region: frankfurt
+    autoDeploy: true
+    envVars:
+      PYTHON_VERSION: 3.10
