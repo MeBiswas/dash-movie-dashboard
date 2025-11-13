@@ -3,9 +3,10 @@ services:
     name: dash-movie-dashboard
     env: python
     plan: free
-    region: singapore   # you can change this: oregon, singapore, etc.
+    region: singapore
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:server
     autoDeploy: true
     envVars:
-      PYTHON_VERSION: 3.10
+      - key: PYTHON_VERSION
+        value: "3.10"
