@@ -1,5 +1,6 @@
 # app.py
 
+import os
 from dash import Dash
 from src.app_router import build_app
 import dash_bootstrap_components as dbc
@@ -14,4 +15,5 @@ server = app.server
 build_app(app)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8050)
+    port = int(os.environ.get("PORT", 8050))
+    app.run_server(host="0.0.0.0", port=port, debug=False)
