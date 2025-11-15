@@ -89,7 +89,7 @@ def layout(app):
     df = load_movies()
     
     header = dbc.Container([
-        html.H1("💰 Financial Analysis", className="mb-2"),
+        html.H2("Financial Analysis", className="mb-2"),
         html.P("Profitability & ROI insights across movies and genres", className="text-muted")
     ], className="my-4")
     
