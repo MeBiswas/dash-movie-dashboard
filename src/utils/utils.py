@@ -1,4 +1,4 @@
-# Utility functions (placeholder) - extend as needed for data cleaning, formatting etc.
+# src/utils/utils.py
 
 def human_format(num):
     try:
